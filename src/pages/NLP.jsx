@@ -32,7 +32,7 @@ const NLP = () => {
         </>
       ),
     },
-    { id: 2, video: 'https://www.youtube.com/embed/de0c0-a7SK0?si=Tm9_bmP1DfZtOXPL&amp;controls=0'
+    { id: 2, link: 'ummmm', video: 'https://www.youtube.com/embed/de0c0-a7SK0?si=Tm9_bmP1DfZtOXPL&amp;controls=0'
 },
   ];
 
@@ -59,12 +59,14 @@ const NLP = () => {
               <ul className='text-2xl font-courier-prime text-gray-200 mb-4'>
                 {project.description}
               </ul>
-                <iframe width="560" height="315" src={project.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p className="text-2xl font-courier-prime text-gray-200">
+                  <a href={project.video}>{project.link}</a>
+                </p>
             </div>
           </div>
         ))}
       </div>
-      <div className='absolute -bottom-16 z-0 left-0 lg:left-16 max-w-[60%] p-0'>
+      <div className='absolute -bottom-16 -z-8 right-0 lg:right-16 max-w-[60%] p-0'>
         <h1 className='text-12rem font-ruthie tracking-tight opacity-80 text-blue-800'>
           NLP
         </h1>

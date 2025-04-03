@@ -64,7 +64,7 @@ const WebDev = () => {
           </div>
         ))}
       </div>
-      <div className='absolute -bottom-16 z-0 left-0 lg:left-16 max-w-[60%] p-0'>
+      <div className='absolute -bottom-16 -z-8 left-0 lg:left-16 max-w-[60%] p-0'>
         <h1 className='text-12rem font-ruthie tracking-tight opacity-80 text-blue-800'>
           JAVASCRIPT
         </h1>
