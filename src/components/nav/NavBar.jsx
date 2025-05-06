@@ -50,8 +50,8 @@ const NavBar = () => {
                   to={section.path}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-blue-600 font-medium uppercase text-2xl lg:text-4xl mb-2"
-                      : "text-blue-600 hover:text-blue-800 uppercase text-2xl lg:text-4xl mb-2"
+                      ? "text-indigo-700 uppercase text-2xl lg:text-4xl mb-2"
+                      : "text-blue-600 hover:text-indigo-700 font-semibold uppercase text-2xl lg:text-4xl mb-2"
                   }
                 >
                   {section.title}

@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Video from "../components/Video";
-import download from '../assets/download.png'
-
-import botrun from "../assets/bot_run.mov";
+import bot from "../assets/bot.jpg";
 
 const NLP = () => {
   const projects = [
@@ -12,17 +9,25 @@ const NLP = () => {
       title: "generate text & dataset. create chatbot.",
       description: (
         <>
-          <ul className='list-disc list-inside space-y-6 italic mt-6'>
+          <ul className='list-disc list-outside ml-4 space-y-6 italic mt-6'>
             <li>
-              bot - Create datasets with SQL and bot learning from input.
+              Default dataset with SQL
             </li>
-            <li>bot - Intent classifier </li>
-            <li>Review class material.</li>
-            <li>
+            <li>Intent classifier</li>
+            <li>Search for content and suggestions with {' '}
+            <a
+                href='https://developers.google.com/youtube/v3'
+                target='_blank'
+                className='text-indigo-700 hover:opacity-80 transition duration-300 ease-in-out'
+              >
+                Youtube API
+              </a>
+            </li>
+              <li>
               <a
                 href='https://rsvp.withgoogle.com/events/google-generative-ai-intensive'
                 target='_blank'
-                className='hover:text-blue-600 transition duration-300 ease-in-out'
+                className='text-indigo-700 hover:opacity-80 transition duration-300 ease-in-out'
               >
                 Further learning.
               </a>
@@ -32,7 +37,13 @@ const NLP = () => {
         </>
       ),
     },
-    { id: 2, link: 'ummmm', video: 'https://www.youtube.com/embed/de0c0-a7SK0?si=Tm9_bmP1DfZtOXPL&amp;controls=0'
+    { id: 2,
+      title: '',
+      description: (
+        <>
+          <img src={bot} alt='bot' className='object-cover mx-auto w-full h-auto rounded-md' />
+        </>
+      )
 },
   ];
 
@@ -45,7 +56,7 @@ const NLP = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className='bg-black rounded-lg shadow-xl overflow-hidden max-h-min'
+            className='bg-black rounded-lg shadow-xl overflow-hidden max-h-auto'
           >
             <div className='p-6'>
             <Link
@@ -66,7 +77,7 @@ const NLP = () => {
           </div>
         ))}
       </div>
-      <div className='absolute -bottom-16 -z-8 right-0 lg:right-16 max-w-[60%] p-0'>
+      <div className='absolute -bottom-16 -z-8 left-0 lg:left-16 max-w-[60%] p-0'>
         <h1 className='text-12rem font-ruthie tracking-tight opacity-80 text-blue-800'>
           NLP
         </h1>

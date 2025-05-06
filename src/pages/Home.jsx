@@ -9,8 +9,10 @@ const Home = () => {
         </a>
       <div className='absolute lg:bottom-8 z-10 lg:left-16 max-w-[60%]'>
         <h1 className='text-10rem font-courier-prime font-bold lg:leading-40 tracking-widest'>
-          PECKHAM <br />
-          DAZ
+          <a href="https://peckhamdaz.com/" target='_blank' className='hover:opacity-75 transition duration-300 ease-in-out'>
+            PECKHAM <br />
+            DAZ
+          </a>
         </h1>
       </div>
       <div className='absolute lg:bottom-0 z-0 right-0 lg:right-56 max-w-[60%] p-0'>

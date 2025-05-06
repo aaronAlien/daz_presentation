@@ -24,7 +24,7 @@ const DataSciProject = () => {
 
   return (
     <div>
-      <h1 className='font-courier-prime bg-black text-gray-200 rounded-lg uppercase text-center text-2xl lg:text-5xl font-bold mb-12'>
+      <h1 className='font-courier-prime bg-black text-gray-200 rounded-lg uppercase text-center py-2 text-2xl lg:text-5xl font-bold'>
         # visualizations
       </h1>
 
@@ -42,7 +42,7 @@ const DataSciProject = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         {projects.map(project => (
-          <div key={project.id} className="bg-black shadow-xl overflow-hidden">
+          <div key={project.id} className="bg-black shadow-xl rounded-lg overflow-hidden">
             <div className="p-6">
               <h2 className="text-2xl font-courier-prime font-semibold space-y-8 uppercase text-center text-gray-200 ">{project.title}</h2>
                 <img

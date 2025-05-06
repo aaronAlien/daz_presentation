@@ -10,13 +10,13 @@ const WebDev = () => {
       description: (
         <>
           <ul className='list-disc list-inside space-y-6 italic mt-6'>
-            <li>Importance of web accessibility for all.</li>
-            <li>Semantic HTML.</li>
+            <li>Importance of web accessibility for all</li>
+            <li>Semantic HTML</li>
             <li>
               <a
                 href='https://born2root.github.io/Fast-Font/'
                 target='_blank'
-                className='hover:text-blue-600 transition duration-300 ease-in-out'
+                className='text-indigo-700 hover:opacity-80 transition duration-300 ease-in-out'
               >
                 FastFont
               </a>{" "}
@@ -24,16 +24,19 @@ const WebDev = () => {
               <a
                 href='https://opendyslexic.org/'
                 target='_blank'
-                className='hover:text-blue-600 transition duration-300 ease-in-out'
+                className='text-indigo-700 hover:opacity-80 transition duration-300 ease-in-out'
               >
                 OpenDyslexic
-              </a>.
+              </a>
+              {' '}font options
             </li>
             <li>
-              <a href="https://toolness.github.io/accessible-color-matrix/" target='_blank' className='hover:text-blue-600 transition duration-300 ease-in-out'>
-                Colour Palette
-              </a>.
+              <a href="https://toolness.github.io/accessible-color-matrix/" target='_blank' className='text-indigo-700 hover:opacity-80 transition duration-300 ease-in-out'>
+                Accessible colour palette
+              </a>
+              {' '}and theme choices
             </li>
+            <li>Text resizing</li>
           </ul>
         </>
       ),
