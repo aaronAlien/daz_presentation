@@ -43,7 +43,7 @@ const WebDev = () => {
 
   return (
     <div className='mx-auto'>
-      <h1 className='font-courier-prime uppercase text-center text-2xl lg:text-5xl font-bold mb-6'>
+      <h1 className='font-courier-prime uppercase text-center text-2xl lg:text-5xl font-bold mb-12'>
         /* html - css - javascript - accessibility */
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -52,7 +52,7 @@ const WebDev = () => {
             <div className="p-6">
               <ul className="text-2xl font-courier-prime text-gray-200 mb-4">{project.description}</ul>
               <Link 
-                to={`/datasci/project/${project.id}`}
+                to={`/webdev/project/${project.id}`}
                 className="cursor-pointer hover:opacity-50 transition duration-500 ease-in-out"
               >
                 <img
@@ -64,11 +64,11 @@ const WebDev = () => {
           </div>
         ))}
       </div>
-      <div className='absolute -bottom-16 z-0 left-0 lg:left-16 max-w-[60%] p-0'>
+      {/*<div className='absolute -bottom-16 z-0 left-0 lg:left-16 max-w-[60%] p-0'>
         <h1 className='text-12rem font-ruthie tracking-tight opacity-80 text-blue-800'>
           JAVASCRIPT
         </h1>
-      </div>
+      </div>*/}
     </div>
   );
 };

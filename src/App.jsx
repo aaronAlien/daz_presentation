@@ -7,6 +7,7 @@ import NLP from './pages/NLP'
 import WebDevProject from './pages/WebDevProject'
 import DataSciProject from './pages/DataSciProject'
 import NLPProject from './pages/NLPProject'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="nlp/project/:id" element={<NLPProject />} />
         </Routes> 
       </main>
+      <Footer />
     </div>
   )
 }

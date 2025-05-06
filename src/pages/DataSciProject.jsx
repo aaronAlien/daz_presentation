@@ -24,9 +24,21 @@ const DataSciProject = () => {
 
   return (
     <div>
-      <h1 className='font-courier-prime bg-black text-gray-200 rounded-lg uppercase text-center text-2xl lg:text-5xl font-bold my-6'>
-        # comparing ouputs 
+      <h1 className='font-courier-prime bg-black text-gray-200 rounded-lg uppercase text-center text-2xl lg:text-5xl font-bold mb-12'>
+        # visualizations
       </h1>
+
+      <div className='flex justify-center items-center'>
+        <a
+          target='_blank'
+          href='https://github.com/aaronAlien/Exploring-Spotify'
+          className='font-courier-prime uppercase text-center text-xl lg:text-4xl font-bold my-6 hover:opacity-50 transition duration-500 ease-in-out'
+        >
+          // code
+        </a>
+      </div>
+
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         {projects.map(project => (
