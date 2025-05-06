@@ -48,7 +48,7 @@ const WebDev = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map(project => (
-          <div key={project.id} className="bg-black rounded-lg shadow-xl overflow-hidden">
+          <div key={project.id} className="bg-black rounded-lg max-h-min shadow-xl overflow-hidden">
             <div className="p-6">
               <ul className="text-2xl font-courier-prime text-gray-200 mb-4">{project.description}</ul>
               <Link 
@@ -64,11 +64,11 @@ const WebDev = () => {
           </div>
         ))}
       </div>
-      {/*<div className='absolute -bottom-16 z-0 left-0 lg:left-16 max-w-[60%] p-0'>
+      <div className='absolute -bottom-16 -z-8 left-0 lg:left-16 max-w-[60%] p-0'>
         <h1 className='text-12rem font-ruthie tracking-tight opacity-80 text-blue-800'>
-          JAVASCRIPT
+          WEB
         </h1>
-      </div>*/}
+      </div>
     </div>
   );
 };
