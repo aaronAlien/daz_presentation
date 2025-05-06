@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="fixed -z-10 bottom-0 w-full flex justify-center items-center space-x-5 pb-2 pt-8">
+        <footer className="fixed bottom-0 w-full flex justify-center items-center space-x-5 pb-2 pt-8">
             <a
                 href="https://github.com/aaronAlien"
                 target="_blank"
