@@ -27,21 +27,19 @@ const NavBar = () => {
   return (
     <nav className='w-full bg-transparent text-gray-800 font-courier-prime relative'>
       <div className='flex flex-wrap flex-col lg:flex-row justify-between items-start pl-8 lg:px-16'>
-        {/* Header on the left */}
         <div className='py-4'>
           <Link
             to={"/"}
             className='cursor-pointer hover:opacity-50 transition duration-700 ease-in-out'
           >
-            <h1 className='text-4xl font-courier-prime text-left font-bold leading-16 tracking-widest hover:text-6xl hover:opacity-50 transition duration-500 ease-in-out'>
-              AARON
+            <h1 className='text-4xl font-courier-prime text-left font-bold leading-16 tracking-widest hover:opacity-50 transition duration-500 ease-in-out'>
+              AARON H
               <br />
               SHAKESPEARE
             </h1>
           </Link>
         </div>
 
-        {/* Navigation on the right */}
         <div className='flex-1 flex justify-end'>
           <div className='grid grid-cols-3 gap-2 lg:py-4 max-w-4xl text-center lg:text-left'>
             {navSections.map((section, index) => (
